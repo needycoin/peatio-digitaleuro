@@ -26,8 +26,8 @@ module Peatio
         end
 
         def register
-          Peatio::Blockchain.registry[:digitaleuro] = Digitaleuro::Blockchain
-          Peatio::Wallet.registry[:digitaleurod] = Digitaleuro::Wallet
+          Peatio::Blockchain.registry[:digitaleuro] = Digitaleuro::Blockchain.new
+          Peatio::Wallet.registry[:digitaleurod] = Digitaleuro::Wallet.new
         end
       end
 
